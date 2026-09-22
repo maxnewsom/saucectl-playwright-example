@@ -1,7 +1,7 @@
 apiVersion: v1alpha
 kind: playwright-cucumberjs
 sauce:
-  region: eu-central-1
+  region: us-west-1
   concurrency: 10
   metadata:
     tags:

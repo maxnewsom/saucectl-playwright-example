@@ -1,7 +1,7 @@
 apiVersion: v1alpha
 kind: playwright
 sauce:
-  region: eu-central-1
+  region: us-west-1 # See https://docs.saucelabs.com/general/supported-regions for a list of supported regions.
   concurrency: 10 # Controls how many suites are executed at the same time.
   metadata:
     tags:
