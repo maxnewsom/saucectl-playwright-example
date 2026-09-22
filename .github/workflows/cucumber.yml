@@ -1,4 +1,4 @@
-name: saucectl playwright tests
+name: saucectl playwright cucumber tests
 
 on:
   pull_request:
@@ -13,17 +13,6 @@ env:
   GITHUB_TOKEN: ${{ github.token }}
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Run saucectl
-        uses: saucelabs/saucectl-run-action@v4
-        with:
-          concurrency: 10
-
   playwright-cucumberjs:
     runs-on: ubuntu-latest
     steps:
